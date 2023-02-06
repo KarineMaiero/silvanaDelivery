@@ -17,7 +17,7 @@ const getAll = async (req, res) => {
             return res.status(401).send("Não autorizado")
         }
     })
-      
+
     userSchema.find(function (err, users) {
       if(err) {
         res.status(500).send({ message: err.message })
@@ -74,7 +74,7 @@ const deleteUserById = async (req, res) => {
        await userFound.delete()
 
        res.status(200).json({
-           mensagem: `Usuário '${userFound.email}' deletado com sucesso!`
+           mensagem: `Usuário '${userFound.username}' deletado com sucesso!`
        })
 
     } catch (err) {

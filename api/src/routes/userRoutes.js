@@ -7,9 +7,9 @@ const controller = require('../controllers/userController');
 const authController = require('../controllers/authController');
 
 router.get('/all', controller.getAll);
-router.post('/register', controller.registerUser);
-router.post('/login', authController.login);
-router.put('/update/:id', controller.updateUserById);
 router.delete('/delete/:id', controller.deleteUserById);
+router.post('/login', authController.login);
+router.post('/register', controller.registerUser);
+router.put('/update/:id', controller.updateUserById);
 
 module.exports = router;
