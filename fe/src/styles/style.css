@@ -14,6 +14,13 @@
     justify-content: center;
 }
 
+#main-login {
+    background-image: linear-gradient(#f09b56, #ffe17de7);
+    margin-top: 95px;
+    height: 100vh;
+    padding: 2em;
+}
+
 h3, h4 {
     font-weight: 700;
     text-align: center;
@@ -37,6 +44,14 @@ p {
 .card-body {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+#card-text-center:hover {
+    width: 161px;
+}
+
+#card-text-center:hover img{
+    width: 148px;
 }
 
 .btn-custm {

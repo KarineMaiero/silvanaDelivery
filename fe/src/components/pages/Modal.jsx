@@ -1,32 +1,43 @@
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-export default function ModalConfirm() {
+export default function Example() {
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div
-      className="modal show"
-      style={{ display: "block", position: "initial" }}
-    >
-      <Modal.Dialog>
-        <Modal.Header closeButton>
+    <>
+      <Modal
+        show={show}
+        onEnter={handleShow}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        id="myModal"
+        className="modal fade"
+        tabindex="-1"
+      >
+        <Modal.Header>
           <Modal.Title>Essa página não é adequada para menores.</Modal.Title>
         </Modal.Header>
-
         <Modal.Body>
-          <p>
-            Para continuar na página, clique no botão "sim" apenas se tiver mais
-            de 18 anos.
-          </p>
+          Para continuar na página, clique no botão abaixo.
         </Modal.Body>
-
         <Modal.Footer>
-          <a href="https://www.google.com/" class="btn btn-secondary active">
-            Não tenho 18 anos
-          </a>
-          <a href="http://localhost:3000/" class="btn btn-primary active">
-            Tenho 18 anos
-          </a>
+          <Button
+            href="https://www.google.com.br/search?q=leite"
+            variant="secondary"
+          >
+            Tenho menos de 18 anos
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Tenho mais de 18 anos
+          </Button>
         </Modal.Footer>
-      </Modal.Dialog>
-    </div>
+      </Modal>
+    </>
   );
 }

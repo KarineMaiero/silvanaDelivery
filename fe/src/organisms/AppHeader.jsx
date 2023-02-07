@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import logo from "../images/logo.png";
 import user from "../images/user.svg";
 import shoppingcart from "../images/shopping-cart.svg";
@@ -42,9 +44,9 @@ export default function AppHeader() {
           </button>
         </form>
         <div className="nav justify-content-end col col-lg-2">
-          <a className="navbar-brand" href={Home}>
+          <NavLink to="/login" className="navbar-brand" href={Home}>
             <img src={user} alt="Usuário" width="30" />
-          </a>
+          </NavLink>
           <div>
             <a className="navbar-brand" href={Home}>
               <img src={shoppingcart} alt="Usuário" width="30" />
