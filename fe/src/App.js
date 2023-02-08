@@ -10,6 +10,7 @@ import Recipes from './components/pages/Recipes';
 import Recipes1 from './components/pages/Models/Recipes1';
 import Recipes2 from './components/pages/Models/Recipes2';
 import Recipes3 from './components/pages/Models/Recipes3';
+import ShoppingCart from './components/pages/ShoppingCart';
 import Login from './components/pages/Login';
 import Footer from './components/organisms/AppFooter';
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/recipes2" element={<Recipes2 />} />
           <Route path="/recipes3" element={<Recipes3 />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/shoppingcart" element={<ShoppingCart />} />
           {/* <Route path="/user/:userid" element={<User />} /> */}
         </Routes>
       <Footer />
