@@ -13,23 +13,19 @@ export default function AppHeader() {
       className="navbar fixed-top navbar-expand-lg bg-dark row justify-content-md-center"
     >
       <div className="container-fluid  navbar-collapse collapse">
-        <a className="navbar-brand" href="http://localhost:3000/">
+        <NavLink to="/">
           <img src={logo} alt="logo-silvana-drinks" width="150" />
-        </a>
+        </NavLink>
         <ul className="nav justify-content-start">
           <li className="nav-item">
-            <a
-              className="nav-link"
-              aria-current="page"
-              href="http://localhost:3000/"
-            >
+            <NavLink to="/">
               <h4>INICIO</h4>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="http://localhost:3000/Recipes">
+            <NavLink to="/recipes">
               <h4>RECEITAS</h4>
-            </a>
+            </NavLink>
           </li>
         </ul>
         <form class="d-flex col-md-4" role="search">
