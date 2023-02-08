@@ -5,13 +5,13 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/pages/Home';
-import Header from './organisms/AppHeader';
+import Header from './components/organisms/AppHeader';
 import Recipes from './components/pages/Recipes';
 import Recipes1 from './components/pages/Models/Recipes1';
 import Recipes2 from './components/pages/Models/Recipes2';
 import Recipes3 from './components/pages/Models/Recipes3';
 import Login from './components/pages/Login';
-import Footer from './organisms/AppFooter';
+import Footer from './components/organisms/AppFooter';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';

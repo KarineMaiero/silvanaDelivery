@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import logo from "../images/logo.png";
-import user from "../images/user.svg";
-import shoppingcart from "../images/shopping-cart.svg";
-import Home from "../components/pages/Home";
+import logo from "../../images/logo.png";
+import user from "../../images/user.svg";
+import shoppingcart from "../../images/shopping-cart.svg";
+import Home from "../pages/Home";
 
 export default function AppHeader() {
   return (
